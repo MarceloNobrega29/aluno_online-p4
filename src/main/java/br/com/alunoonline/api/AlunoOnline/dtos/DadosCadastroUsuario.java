@@ -1,0 +1,11 @@
+package br.com.alunoonline.api.AlunoOnline.dtos;
+
+import jakarta.validation.constraints.NotBlank;
+
+public record DadosCadastroUsuario(
+        @NotBlank(message = "Login é obrigatório")
+        String login,
+
+        @NotBlank(message = "Senha é obrigatório")
+        String senha
+) {}
